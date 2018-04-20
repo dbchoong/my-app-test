@@ -14,7 +14,7 @@ export class JokeListComponent {
     constructor() {
         this.jokes = [
             new Joke('What joke 01?','Joke 1'),
-            new Joke('What joke 02?','Jole 2'),
+            new Joke('What joke 02?','Blah Blah 2'),
             new Joke('What joke 03?','Joke \'3\''),
         ];
     }
