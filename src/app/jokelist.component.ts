@@ -3,7 +3,7 @@ import {  Joke } from './joke.component';
 
 @Component({
     selector: 'joke-list',
-    template: `
+    template: `<app-joke-form></app-joke-form>
     <joke *ngFor="let j of jokes" [joke]="j"></joke>
     `
 })
