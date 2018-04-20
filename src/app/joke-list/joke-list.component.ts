@@ -5,9 +5,7 @@ import {  Joke } from '../joke/joke.component';
   selector: 'app-joke-list',
   templateUrl: './joke-list.component.html',
   styleUrls: ['./joke-list.component.css'],
-  template: `<app-joke-form></app-joke-form>
-  <app-joke *ngFor="let j of jokes" [joke]="j"></app-joke>
-  `
+
 })
 export class JokeListComponent implements OnInit {
 
@@ -15,12 +13,15 @@ export class JokeListComponent implements OnInit {
 
   constructor() {
       this.jokes = [
-          new Joke('What joke 01?','Joke 1'),
-          new Joke('What joke 02?','Blah Blah 2'),
-          new Joke('What joke 03?','Joke \'3\''),
+          new Joke('What joke Z1?','Joke 1'),
+          new Joke('What joke z2?','Blah Blah 2'),
+          new Joke('What joke z3?','Joke \'3\''),
       ];
   }
-
+  addJoke(joke) {
+    this.jokes.unshift(joke);
+    //this.jokes.push(joke);
+    }
   ngOnInit() {
   }
 

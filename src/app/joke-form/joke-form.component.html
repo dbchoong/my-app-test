@@ -1,3 +1,18 @@
-<p>
-  <b>Hello World It works!!</b>
-</p>
+<div class="card bg-light mb-3" style="width: 640px;">
+    <div class="card-body">
+        <div class="card-title">
+            <h2>Make Joke</h2>
+        </div>
+<div class="form-group">
+<label for="mySetup">Setup</label>
+<input type="text" class="form-control" id="mySetup" aria-describedby="YourJokesLah" placeholder="Enter joke" #setup>
+<small id="mySetup" class="form-text text-muted">We'll never share your email with anyone else.</small>
+</div>
+<div class="form-group">
+<label for="myPunchLine">Punchline</label>
+<input type="text" class="form-control" id="myPunchLine" placeholder="Password" #punchline>
+</div>
+
+<button (click)="createJoke(setup.value,punchline.value)" type="submit" class="btn btn-primary">Submit</button>
+</div>
+</div>
